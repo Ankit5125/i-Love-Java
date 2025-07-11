@@ -63,3 +63,4 @@ public class Prims {
         System.out.println("Total Cost = " + tCost);
     }
 }
+
