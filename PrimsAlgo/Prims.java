@@ -21,7 +21,7 @@ public class Prims {
                 { 1, 5, max, 5, 6, 4 },
                 { 5, max, 5, max, max, 2 },
                 { max, 3, 6, max, max, 6 },
-                { max, max, 4, 2, 6, 1 },
+                { max, max, 4, 2, 6, max },
         };
 
         int[] selected = { 1, 0, 0, 0, 0, 0 };
