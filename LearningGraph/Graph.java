@@ -37,7 +37,7 @@ public class Graph {
         for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
-            int weight = edge[2];
+            // int weight = edge[2];
 
             if (isDirected) {
                 adjMatrix[u][v] = edge[2];
