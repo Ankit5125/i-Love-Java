@@ -23,6 +23,19 @@ public class LeaningGraph {
         MyGraph graph2 = new MyGraph(n);
         graph2.addEdges(edges, true);
         graph2.printList();
+
+
+        // undirected
+        System.out.println("Undirected Graph : ");
+        MyGraph graph3 = new MyGraph(n);
+        graph3.addEdgeWithWeight(edges, false);
+        graph3.printList();
+        
+        // directed
+        System.out.println("Directed Graph : ");
+        MyGraph graph4 = new MyGraph(n);
+        graph4.addEdgeWithWeight(edges, true);
+        graph4.printList();
     }
 }
  
@@ -47,6 +60,22 @@ class MyGraph{
             else{
                 adjList.get(u).add(v);
                 adjList.get(v).add(u);
+            }
+        }
+    }
+
+    public void addEdgeWithWeight(int[][] edges, boolean isDirected){
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int weight = edge[2];
+
+            if (isDirected) {
+                adjList.get(u).add(weight);
+            }
+            else{
+                adjList.get(u).add(weight);
+                adjList.get(v).add(weight);
             }
         }
     }
