@@ -38,3 +38,16 @@ public class InsertionSort {
         sc.close();
     }
 }
+
+// Enter (N) : 
+
+// 5
+// Enter 5 Elements : 
+// 50 40 30 20 10
+// Sorting Array : 
+// [40, 50, 30, 20, 10]
+// [30, 40, 50, 20, 10]
+// [20, 30, 40, 50, 10]
+// [10, 20, 30, 40, 50]
+// [10, 20, 30, 40, 50]
+// Time Taken : 760900 ns
