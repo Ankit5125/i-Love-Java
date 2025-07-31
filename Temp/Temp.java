@@ -18,6 +18,36 @@ public class Temp {
         // System.out.println(two ^ 1);
         // System.out.println(~two);
 
+     // -----------------------------------------------------------------------------------
+        int a = 10;
+        int b = 3;
+        long start, end;
+
+        start = System.nanoTime();
+        System.out.println(a * Math.pow(2, b));
+        end = System.nanoTime();
+        System.out.println("Time Taken : " + (end - start));
+        
+        start = System.nanoTime();
+        System.out.println(iterativePower(a,b));
+        end = System.nanoTime();
+        System.out.println("Time Taken : " + (end - start));
+        
+        start = System.nanoTime();
+        System.out.println(a << b);
+        end = System.nanoTime();
+        System.out.println("Time Taken : " + (end - start));
+
+        System.out.println(a);
+
+    }
+
+    static int iterativePower(int a, int b) {
+        for (int i = 0; i < b; i++) {
+            a *= 2;
+        }
+        return a;
+    
     }
 
     static long feboIteration(int n){
