@@ -6,18 +6,18 @@ public class Temp {
         // long end = System.nanoTime();
 // System.out.println("Recursion : " + (end - start));
 
-        long start2 = System.nanoTime();
-        System.out.println(feboIteration(50));
-        long end2 = System.nanoTime();
+        // long start2 = System.nanoTime();
+        // System.out.println(feboIteration(50));
+        // long end2 = System.nanoTime();
 
-    }
+        
+        // System.out.println("Iteration : " + (end2-start2));
 
-    static int iterativePower(int a, int b) {
-        for (int i = 0; i < b; i++) {
-            a *= 2;
-        }
-        return a;
-    
+        // -----------------------------------------------------------------------------------
+        // int two = 2;
+        // System.out.println(two ^ 1);
+        // System.out.println(~two);
+
     }
 
     static long feboIteration(int n){
