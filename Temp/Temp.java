@@ -39,7 +39,8 @@ public class Temp {
         // System.out.println("Time Taken : " + (end - start));
 
         // System.out.println(a);
-
+        
+     // -----------------------------------------------------------------------------------
         int num = 27;
         System.out.println(Integer.toBinaryString(num));
     }
