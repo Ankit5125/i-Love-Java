@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Easy;
 
 public class ProductofNtoOne {
     public static void main(String[] args) {
