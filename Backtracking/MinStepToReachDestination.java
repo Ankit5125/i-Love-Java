@@ -2,7 +2,7 @@ package Backtracking;
 
 public class MinStepToReachDestination {
     public static void main(String[] args) {
-        System.out.println(countSteps(2,2));
+        System.out.println(countSteps(12,12));
     }
 
     static int countSteps(int row, int col){
