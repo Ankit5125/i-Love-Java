@@ -1,4 +1,4 @@
-package Backtracking;
+package Backtracking.ReverseOrder;
 
 public class StepToReachDestination {
     public static void main(String[] args) {

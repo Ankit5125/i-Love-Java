@@ -1,4 +1,4 @@
-package Backtracking;
+package Backtracking.ReverseOrder;
 
 public class PathToReachDest_Diagonal {
     public static void main(String[] args) {
