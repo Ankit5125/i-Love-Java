@@ -1,6 +1,6 @@
 package Backtracking;
 
-public class MinStepToReachDestination {
+public class StepToReachDestination {
     public static void main(String[] args) {
         System.out.println(countSteps(12,12));
     }
