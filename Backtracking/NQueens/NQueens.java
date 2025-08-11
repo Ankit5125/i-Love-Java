@@ -7,6 +7,7 @@ public class NQueens {
         boolean[][] board = new boolean[n][n];
         System.out.println(printNQueens(board, 0));
     }
+    
 
     static int printNQueens(boolean[][] board, int row) {
         if (row == board.length) {
