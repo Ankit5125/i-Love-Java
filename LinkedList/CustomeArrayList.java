@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class CustomeLinkedList {
+public class CustomeArrayList {
     public int totalLength = 5;
     Node[] list = new Node[totalLength];
     Node currentNode;

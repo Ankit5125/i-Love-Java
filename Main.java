@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-import LinkedList.CustomeLinkedList;
+import LinkedList.CustomeArrayList;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        CustomeLinkedList myList = new CustomeLinkedList();
+        CustomeArrayList myList = new CustomeArrayList();
         for (int i = 0; i < 10; i++) {
             int ele = sc.nextInt();
             myList.add(ele);
