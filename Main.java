@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import LinkedList.CustomLinkedList;
+import LinkedList.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
         // System.out.println(myList.totalLength);
         // System.out.println(myList.length);
 
-        CustomLinkedList list = new CustomLinkedList();
+        LinkedList list = new LinkedList();
         list.addFirst(10);
         list.addFirst(20);
         list.addFirst(30);
