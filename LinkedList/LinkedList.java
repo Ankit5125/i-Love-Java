@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class CustomLinkedList {
+public class LinkedList {
 
     public static class Node {
         int value;
@@ -24,7 +24,7 @@ public class CustomLinkedList {
     public Node head;
     public Node tail;
 
-    public CustomLinkedList() {
+    public LinkedList() {
         size = 0;
     }
 
