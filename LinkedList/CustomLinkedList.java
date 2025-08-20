@@ -72,6 +72,14 @@ public class CustomLinkedList {
         }
     }
 
+    public void deleteFirst(){
+        head = head.next;
+        if (head == null) {
+            tail = head;
+        }
+        size--;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
