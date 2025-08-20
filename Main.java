@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import LinkedList.CustomeArrayList;
 import LinkedList.CustomLinkedList;
 
 public class Main {
@@ -22,6 +21,7 @@ public class Main {
         list.addFirst(20);
         list.addFirst(30);
         list.addLast(40);
+        list.insert(2, 50);
 
         System.out.println("List : " + list.toString());
         System.out.println("Size : " + list.size);

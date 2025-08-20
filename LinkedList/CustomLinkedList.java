@@ -1,16 +1,19 @@
 package LinkedList;
 
 public class CustomLinkedList {
-    
+
     public static class Node {
         int value;
         Node next;
-        Node(int value){
+
+        Node(int value) {
             this.value = value;
         }
+
         public void setNext(Node next) {
             this.next = next;
         }
+
         @Override
         public String toString() {
             return this.value + "";
@@ -21,11 +24,11 @@ public class CustomLinkedList {
     public Node head;
     public Node tail;
 
-    public CustomLinkedList(){
+    public CustomLinkedList() {
         size = 0;
     }
 
-    public void addFirst(int value){
+    public void addFirst(int value) {
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
@@ -36,11 +39,37 @@ public class CustomLinkedList {
         size++;
     }
 
-    public void addLast(int value){
+    public void addLast(int value) {
         Node newNode = new Node(value);
         tail.next = newNode;
         tail = newNode;
         size++;
+    }
+
+    public void insert(int index, int value) {
+        if (index == 0) {
+            addFirst(value);
+            return;
+        } else if (index == size) {
+            addLast(value);
+            return;
+        } else {
+            if (index > size) {
+                System.out.println("Enter Valid Index");
+            } else {
+                Node newNode = new Node(value);
+                Node temp = head;
+                int i = 0;
+                while (i != index) {
+                    temp = temp.next;
+                    i++;
+                }
+                Node remainingNodes = temp.next;
+                temp.next = newNode;
+                newNode.next = remainingNodes;
+                size++;
+            }
+        }
     }
 
     @Override
