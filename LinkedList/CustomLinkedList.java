@@ -72,12 +72,27 @@ public class CustomLinkedList {
         }
     }
 
-    public void deleteFirst(){
+    public void deleteFirst() {
         head = head.next;
         if (head == null) {
             tail = head;
         }
         size--;
+    }
+
+    public void deleteLast() {
+        if (size <= 1) {
+            deleteFirst();
+            return;
+        } else {
+            Node cNode = head;
+            while (cNode.next != tail) {
+                cNode = cNode.next;
+            }
+            cNode.next = null;
+            tail = cNode;
+            size--;
+        }
     }
 
     @Override

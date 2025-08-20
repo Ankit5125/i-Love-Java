@@ -23,7 +23,8 @@ public class Main {
         list.addLast(40);
         list.insert(2, 50);
 
-        list.deleteFirst();
+        // list.deleteFirst();
+        list.deleteLast();
 
         System.out.println("List : " + list.toString());
         System.out.println("Size : " + list.size);
