@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import LinkedList.CircularLinkedList;
 import LinkedList.DoublyLinkedList;
 import LinkedList.LinkedList;
 
@@ -31,17 +32,25 @@ public class Main {
 
         // ---------------------------------------------------------------------------------
 
-        DoublyLinkedList list = new DoublyLinkedList();
-        list.addFirst(10);
-        list.addFirst(20);
-        list.addFirst(30);
-        list.addLast(40);
-        list.addLast(50);
-        list.insert(3, 100);
+        // DoublyLinkedList list = new DoublyLinkedList();
+        // list.addFirst(10);
+        // list.addFirst(20);
+        // list.addFirst(30);
+        // list.addLast(40);
+        // list.addLast(50);
+        // list.insert(3, 100);
+
+        CircularLinkedList list = new CircularLinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.insert(1, 100);
+        list.addFirst(40);
+        list.addFirst(50);
 
         System.out.println("List : " + list.toString());
-        System.out.print("Reverse : ");
-        list.reverse();
+        // System.out.print("Reverse : ");
+        // list.reverse();
         System.out.println("Size : " + list.size);
 
         sc.close();
