@@ -1,4 +1,3 @@
-package LinkedList;
 
 public class LinkedList {
 
@@ -28,6 +27,19 @@ public class LinkedList {
         size = 0;
     }
 
+    public int get(int index){
+        Node tHead = head;
+        for (int i = 0; i < size; i++) {
+            if (i == index) {
+                return tHead.value;
+            }
+            else{
+                tHead = tHead.next;
+            }
+        }
+        return Integer.MIN_VALUE;
+    }
+
     public void addFirst(int value) {
         Node newNode = new Node(value);
         newNode.next = head;
@@ -37,6 +49,22 @@ public class LinkedList {
             tail = head;
         }
         size++;
+    }
+
+    public void addFirst(int[] value) {
+
+        for (int num : value) {
+            Node newNode = new Node(num);
+
+            newNode.next = head;
+            head = newNode;
+
+            if (tail == null) {
+                tail = head;
+            }
+            size++;
+        }
+
     }
 
     public void addLast(int value) {

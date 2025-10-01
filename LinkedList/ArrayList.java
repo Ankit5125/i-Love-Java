@@ -1,5 +1,3 @@
-package LinkedList;
-
 public class ArrayList {
     public int totalLength = 5;
     Node[] list = new Node[totalLength];

@@ -1,9 +1,4 @@
 import java.util.Scanner;
-
-import LinkedList.CircularLinkedList;
-import LinkedList.DoublyLinkedList;
-import LinkedList.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
