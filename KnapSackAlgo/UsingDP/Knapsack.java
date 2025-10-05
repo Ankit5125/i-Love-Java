@@ -38,6 +38,7 @@ public class Knapsack {
         int W = sc.nextInt();
 
         System.out.println(knapsack(W, val, wt));
+        
         sc.close();
     }
 }
