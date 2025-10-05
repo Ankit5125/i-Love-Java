@@ -17,14 +17,27 @@ public class LCS {
             }
         }
 
-        // Print the table
-        // System.out.println("DP Table:");
-        // for (int i = 0; i <= m; i++) {
-        //     for (int j = 0; j <= n; j++) {
-        //         System.out.print(dp[i][j] + " ");
-        //     }
-        //     System.out.println();
-        // }
+        // Print the DP table
+        System.out.println("DP Table:");
+        System.out.print("    "); // Top-left empty space
+        for (int j = 0; j < n; j++) {
+            System.out.print(Y.charAt(j) + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i <= m; i++) {
+            if (i == 0)
+                System.out.print(" "); // First row label
+            else
+                System.out.print(X.charAt(i - 1));
+            
+            System.out.print(" ");
+            
+            for (int j = 0; j <= n; j++) {
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
 
         return dp[m][n];
     }
@@ -33,6 +46,6 @@ public class LCS {
         String X = "ABCBDAB";
         String Y = "BDCAB";
         int length = lcs(X, Y);
-        System.out.println("Length of LCS is: " + length);
+        System.out.println("\nLength of LCS is: " + length);
     }
 }

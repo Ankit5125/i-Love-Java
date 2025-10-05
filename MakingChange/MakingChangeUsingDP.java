@@ -14,15 +14,15 @@ public class MakingChangeUsingDP {
         }
         dp[0] = 0; // Base case: 0 coins needed for amount 0
 
-        // DP iteration
-        for (int i = 1; i <= amount; i++) { // compute dp[i]
-            for (int coin : coins) { // try every coin
-                if (coin <= i && dp[i - coin] != Integer.MAX_VALUE) {
-                    dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
-                }
-                System.out.println(Arrays.toString(dp));
-            }
+       for (int i = 1; i <= amount; i++) {
+    for (int coin : coins) {
+        if (coin <= i && dp[i - coin] != Integer.MAX_VALUE) {
+            dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
         }
+    }
+    System.out.println("After computing amount " + i + ": " + Arrays.toString(dp));
+}
+
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 
