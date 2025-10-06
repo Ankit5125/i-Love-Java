@@ -1,27 +1,34 @@
-import java.util.Scanner;
 import java.util.LinkedList;
-import java.util.Queue;
+
+import java.util.*;
 
 public class BFS {
     static int[][] graph;
     static boolean[] visited;
 
-    // BFS algorithm implementation
     public static void bfs(int start, int numNodes) {
         Queue<Integer> queue = new LinkedList<>();
         visited[start] = true;
         queue.add(start);
 
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            System.out.print(node + " ");
+        System.out.println("Node\tQueue");
+        System.out.println("-----------------");
 
+        while (!queue.isEmpty()) {
+            // Print the current node and the queue before processing
+            System.out.print(queue.peek() + "\t");
+
+            int node = queue.poll();
+
+            // Find unvisited neighbors and add them to the queue
             for (int i = 0; i < numNodes; i++) {
                 if (graph[node][i] == 1 && !visited[i]) {
                     visited[i] = true;
                     queue.add(i);
                 }
             }
+            // Print the queue state after adding new nodes
+            System.out.println(queue.toString());
         }
     }
 
@@ -43,7 +50,9 @@ public class BFS {
         System.out.println("Enter starting node:");
         int start = sc.nextInt();
 
-        System.out.println("BFS Traversal:");
+        System.out.println("\nBFS Traversal Table:");
         bfs(start, numNodes);
+        
+        sc.close();
     }
 }
