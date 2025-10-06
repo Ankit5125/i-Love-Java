@@ -35,5 +35,6 @@ public class DFS {
 
         System.out.println("DFS traversal:");
         dfs(start, n);
+        sc.close();
     }
 }

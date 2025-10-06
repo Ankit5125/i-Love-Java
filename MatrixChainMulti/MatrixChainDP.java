@@ -79,5 +79,6 @@ public class MatrixChainDP {
         }
 
         matrixChainOrder(dims);
+        sc.close();
     }
 }
